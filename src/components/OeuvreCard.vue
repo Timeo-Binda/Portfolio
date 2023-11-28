@@ -21,8 +21,8 @@ useHead({
 
 
 <template>
-  <div class="relative group overflow-hidden aspect-w-16 aspect-h-9 pointer-events-auto">
-     <img class="object-cover transition-transform transform group-hover:scale-100 group-hover:brightness-75" :src="urlImg" alt="">
+  <div class="relative group overflow-hidden pointer-events-auto">
+     <img class="object-cover transition-transform aspect-video transform group-hover:scale-100 group-hover:brightness-75" :src="urlImg" alt="">
      <p class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">{{ projets_videoInfo.titre }}</p>
   </div>
 </template>

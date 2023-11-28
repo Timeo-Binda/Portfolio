@@ -10,7 +10,7 @@
     @apply text-4xl font-h1 leading-tight lg:text-6xl text-white;
   }
   h2 {
-    @apply text-2xl font-h2 leading-tight lg:text-6xl text-white;
+    @apply text-4xl font-h2 leading-tight lg:text-6xl text-white;
   }
   h3 {
     @apply text-xl font-cta leading-tight text-white;

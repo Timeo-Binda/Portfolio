@@ -9,12 +9,35 @@ import IconMail from './icons/IconMail.vue';
 
 
 <template>
-    <footer class="z-10 flex w-full translate-y-0 items-stretch justify-between bg-gray-900 text-white px-6 py-2 transition-all duration-300 ease-in-out border-b border-white">
-        <div class="py-4">
-            <a class="w-16 h-16 border-4 border-white rounded-full" href="https://www.linkedin.com/in/tim%C3%A9o-binda-9b1b3b1b9/" target="_blank" rel="noopener noreferrer">
-                <IconLinkedin class="w-6 h-6" />
+    <footer class="mt-8 bg-gray-900 border-t  border-white py-8">
+      
+        <ul class=" flex flex-row justify-center pb-8 gap-8 ">
+          <li>
+            <a href="https://www.linkedin.com/in/tim%C3%A9o-binda-734324255/" target="_blank" rel="noopener noreferrer" class="w-16 h-16">
+              <IconLinkedin class="w-6 h-6 scale-150" />
             </a>
-        </div>
-
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCQ6Zr5qXJ7Z8XQ7QX6Z9Z0w" target="_blank" rel="noopener noreferrer" class="w-16 h-16">
+              <YoutubeIcon class="w-6 h-6 scale-150" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/etudiant_timeob/" target="_blank" rel="noopener noreferrer" class="w-16 h-16">
+              <InstagramIcon class="w-6 h-6 scale-150" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:etudiant.tbinda@gmail.com" class="w-16 h-16">
+              <IconMail class="w-6 h-6 scale-150" />
+            </a>
+          </li>
+          <li>
+            <a href="tel:+33783814951" class="w-16 h-16">
+              <IconPhone class="w-6 h-6 scale-150" />
+            </a>
+          </li>
+        </ul>
+      <p class="flex justify-center">&copy; Timéo BINDA - 2023</p>
     </footer>
 </template>
