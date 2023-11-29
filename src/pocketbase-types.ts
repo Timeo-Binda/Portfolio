@@ -81,7 +81,3 @@ export type CollectionResponses = {
 // Type for usage with type asserted PocketBase instance
 // https://github.com/pocketbase/js-sdk#specify-typescript-definitions
 
-export type TypedPocketBase = PocketBase & {
-  collection(idOrName: 'projets_video'): RecordService<projets_videoResponse>
-  collection(idOrName: 'users'): RecordService<UsersResponse>
-}

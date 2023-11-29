@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { pb } from '@/backend';
 import { projets_videoId } from '@/backend';
-import { defineProps } from 'vue';
 import { formatDate } from '@/helper';
 
 const props = defineProps<{
@@ -13,9 +12,9 @@ const video = projets_videoInfo.url;
 
 const imagebonus = projets_videoInfo.photo_bonus;
 console.log(imagebonus);
-const urlImagesBonus = imagebonus.map(nomImage => {
-  return pb.getFileUrl(projets_videoInfo, nomImage, { thumb: '100x250' });
-});
+const urlImagesBonus = Array.isArray(imagebonus) 
+  ? imagebonus.map(nomImage => pb.getFileUrl(projets_videoInfo, nomImage, { thumb: '100x250' }))
+  : [];
 console.log(urlImagesBonus);
 
 function isYouTubeLink(link: string): boolean {
@@ -43,7 +42,7 @@ const images = Array.isArray(projets_videoInfo.photo_bonus) ? projets_videoInfo.
 
 // Créez des URL pour chaque image
 const imageDetails = images.map(img => ({
-  url: img ? pb.getFileUrl(props, img, { thumb: '100x250' }) : '/image-not-found.png',
+  url: img ? pb.getFileUrl(projets_videoInfo, img, { thumb: '100x250' }) : '/image-not-found.png',
   description: img ? img.description : 'Description par défaut',
 }));
 

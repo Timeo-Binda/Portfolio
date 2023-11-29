@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { pb } from '@/backend';
 import { projets_videoId } from '@/backend';
-import { defineProps, onMounted } from 'vue';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 

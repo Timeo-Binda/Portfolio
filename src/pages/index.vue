@@ -2,38 +2,39 @@
 import OeuvreCard from '@/components/OeuvreCard.vue'
 import { RouterLink, RouterView } from 'vue-router'
 import { useHead } from '@unhead/vue'
+import { allprojets_video } from '@/backend'
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
 useHead({
   title: 'Portfolio BINDA'
 })
-import { allprojets_video } from '@/backend'
+
 const projets_videoList = await allprojets_video();
 
-
-
-import { ref, onMounted } from 'vue';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-const cardContainer = ref(null);
+const cardContainer = ref<HTMLElement | null>(null)
 
 onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.from(cardContainer.value.children, {
-    opacity: 0,
-    y: 75,
-    stagger: 0.2,
-    duration: 1.5,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: cardContainer.value,
-      start: 'top 70%',
-      end: 'bottom 20%',
-      scrub: 1,
-    },
-  });
-});
+  gsap.registerPlugin(ScrollTrigger)
+  if (cardContainer.value && cardContainer.value.children) {
+    gsap.from(cardContainer.value.children, {
+      opacity: 0,
+      y: 75,
+      stagger: 0.2,
+      duration: 1.5,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: cardContainer.value,
+        start: 'top 70%',
+        end: 'bottom 20%',
+        scrub: 1
+      }
+    })
+  }
+})
 </script>
+
 
 <template>
   <main>

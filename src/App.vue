@@ -13,4 +13,3 @@ import { RouterLink, RouterView } from 'vue-router'
   </main>
   <FooterPage />
 </template>
-/
