@@ -51,6 +51,8 @@ export type projets_videoRecord<Tproduits = unknown> = {
   categorie?: categorieOptions
   date?: string
   note?: number // Added new field
+  recommandation?: string
+  nom_personne_reco?: string
 }
 
 export type UsersRecord = {

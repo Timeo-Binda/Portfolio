@@ -101,6 +101,13 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
 
 
   <div class="mt-4 lg:mt-12 grid lg:grid-cols-2 gap-4 ">
+    <div v-if="projets_videoInfo.recommandation">
+      <h2>Recommandation</h2>
+      <div class="lg:px-16 flex content-center justify-center flex-col lg:text-2xl">
+        <p class="italic">"{{ projets_videoInfo.recommandation }}"</p>
+        <p class="text-right"> {{ projets_videoInfo.nom_personne_reco }}</p>
+      </div>
+    </div>
     <div v-for="(url, index) in urlImagesBonus.slice(2)" :key="index" class="lg:col-span-1">
       <img :src="url" :alt="'Image bonus ' + (index + 1)" class="w-full h-full aspect-[5/3] object-cover ">
     </div>

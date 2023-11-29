@@ -11,7 +11,12 @@ export const pb = new PocketBase(pocketbase_ip);
 
 // Fonction qui retourne la liste de tous les artistes
 export async function allprojets_video() {
-  const records = await pb.collection('projets_video').getFullList<projets_videoResponse>();
+  const records = await pb.collection('projets_video').getFullList<projets_videoResponse>(
+    {
+      sort: '-note',
+    }
+  );
+
   return records;
 }
 
