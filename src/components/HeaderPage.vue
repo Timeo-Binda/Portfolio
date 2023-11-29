@@ -34,6 +34,7 @@ function closeMenu() {
                     <li class="menu-item"><RouterLink class="menu-link" to="/conservatoire" @click="closeMenu">Photos</RouterLink></li>
                     <li class="menu-item"><RouterLink class="menu-link" to="/" @click="closeMenu">Design</RouterLink></li>
                     <li class="menu-item"><RouterLink class="menu-link" to="/events" @click="closeMenu">A propos</RouterLink></li>
+                    <li class="menu-item"><RouterLink class="menu-link" to="case_study" @click="closeMenu">case study</RouterLink></li>
                 </ul>
             </nav>
         </div>
