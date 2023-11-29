@@ -84,7 +84,7 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
   <h2 class="mt-24 lg:mt-48">Le projet</h2>
 
   <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
-    <p>{{ projets_videoInfo.result }} </p>
+    <p>{{ projets_videoInfo.projet }} </p>
     <div>
       <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[5/3] object-cover" :src="urlImagesBonus[0]" >
     </div>
@@ -93,7 +93,7 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
   <h2 class="mt-24 lg:mt-48">Sa Réalisation</h2>
 
   <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
-    <p>{{ projets_videoInfo.result }} </p>
+    <p>{{ projets_videoInfo.realisation }} </p>
     <div>
       <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[5/3] object-cover" :src="urlImagesBonus[1]" >
     </div>

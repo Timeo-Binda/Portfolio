@@ -44,12 +44,13 @@ export type projets_videoRecord<Tproduits = unknown> = {
   titre?: string
   url?: string
   cover?: string
-  context?: string
-  result?: string
+  projet?: string // Updated field name
+  realisation?: string // Updated field name
   photo_bonus?: string
   role?: string
   categorie?: categorieOptions
   date?: string
+  note?: number // Added new field
 }
 
 export type UsersRecord = {
