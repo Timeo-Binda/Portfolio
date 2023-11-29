@@ -2,7 +2,7 @@
     <main class="bg-[#323232]">
         <h2 class="my-8 flex justify-center">Etude de cas</h2>
         <div class="flex items-center justify-center"><img class="scale-50"
-                src="../components/photos/Capture d'écran 2023-11-29 082925.png" alt="">
+                src="../components/photos/1.png" alt="">
         </div>
         <h2 class="mt-40">Reverse footage</h2>
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
@@ -45,7 +45,7 @@
                 séquence d'un film montée à l'envers
                 dans le temps. Ce qui donne un effet
                 de retour vers le passé.</p>
-            <img class="lg:h-1/2 mx-auto" src="../components/photos/Capture d'écran 2023-11-29 082925.png" alt="">
+            <img class="lg:h-1/2 mx-auto" src="../components/photos/1.png" alt="">
         </div>
         <h2 class="mt-40">Typo</h2>
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
@@ -64,6 +64,75 @@
             <img class=" mx-auto" src="../components/photos/typo.png" alt="">
         </div>
 
+        <h2 class="mt-40">Mockup</h2>
+        <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
+            <p>Voici différents mockups du site, vous
+                pourrez y voir différentes pages du site.</p>
+            <img class=" mx-auto" src="../components/photos/mu1.png" alt="">
+        </div>
+
+        <h2 class="mt-40">Pages</h2>
+        <div class="mt-4 lg:mt-6 grid lg:grid-cols-4">
+            <div class="flex flex-col justify-center items-center">
+                <img class=" mx-auto" src="../components/photos/mu2.png" alt="">
+                <p>Un article sur le film culte
+                    Inglourious Basterds</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <img class=" mx-auto" src="../components/photos/mu3.png" alt="">
+                <p>Un article sur Bohemian
+                    Rhapsody par Quenn</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <img class=" mx-auto" src="../components/photos/mu4.png" alt="">
+                <p>Une page pour présenter les
+                    projets similaires</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <img class=" mx-auto" src="../components/photos/mu5.png" alt="">
+                <p>Un article sur Le futur du
+                    Cinéma</p>
+            </div>
+        </div>
+
+        <h2 class="mt-40">Fonctionnalités</h2>
+        <div class="mt-4 lg:mt-6 grid lg:grid-cols-4">
+            <div class="flex flex-col justify-center items-center">
+                <img class=" mx-auto" src="../components/photos/mu6.png" alt="">
+                <p>Un carrousel permet de faire
+                    défiler la filmographie d'un
+                    réalisateur</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <img class=" mx-auto" src="../components/photos/mu7.png" alt="">
+                <p>Un formulaire de contact fictif
+                    permet de mettre en relation
+                    le créateur et l'internaute</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+                <img class=" mx-auto" src="../components/photos/mu8.png" alt="">
+                <p>Le site est bilingue. Car le
+                    sujet peut intéresser le au
+                    delà de la francophonie</p>
+            </div>
+        </div>
+
+
+        <h2 class="mt-40">Bilan</h2>
+        <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
+            <p>Ce projet m'apporté beaucoup en effet, comme il était mon
+                premier dans ce domaine, j'ai vraiment l'impression d'avoir
+                appris de nombreuses choses et cela est vraiment
+                satisfaisant. Oe suis vraiment fier d'avoir réalisé ce projet. J'ai
+                vraiment apprécié mettre en forme ma passion sur un
+                nouveau support.</p>
+
+        </div>
 
     </main>
 </template>
