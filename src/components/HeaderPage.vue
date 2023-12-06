@@ -31,10 +31,10 @@ function closeMenu() {
         :class="{ '!visible opacity-100': activeMenu }" v-scroll-lock="activeMenu">
                 <ul class="mt-[25vh] ml-16 lg:m-0 lg:flex">
                     <li class="menu-item"><RouterLink class="menu-link" to="/Videos" @click="closeMenu">Vidéos</RouterLink></li>
-                    <li class="menu-item"><RouterLink class="menu-link" to="/conservatoire" @click="closeMenu">Photos</RouterLink></li>
-                    <li class="menu-item"><RouterLink class="menu-link" to="/" @click="closeMenu">Design</RouterLink></li>
-                    <li class="menu-item"><RouterLink class="menu-link" to="/events" @click="closeMenu">A propos</RouterLink></li>
-                    <li class="menu-item"><RouterLink class="menu-link" to="case_study" @click="closeMenu">case study</RouterLink></li>
+                    <li class="menu-item"><RouterLink class="menu-link" to="/photos" @click="closeMenu">Photos</RouterLink></li>
+                    <li class="menu-item"><RouterLink class="menu-link" to="/designs" @click="closeMenu">Design</RouterLink></li>
+                    <li class="menu-item"><RouterLink class="menu-link" to="about" @click="closeMenu">A propos</RouterLink></li>
+                    <!-- <li class="menu-item"><RouterLink class="menu-link" to="case_study" @click="closeMenu">case study</RouterLink></li> -->
                 </ul>
             </nav>
         </div>

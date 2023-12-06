@@ -103,7 +103,7 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
     <div v-if="projets_videoInfo.recommandation">
       <h2>Recommandation</h2>
       <div class="lg:px-16 flex content-center justify-center flex-col lg:text-2xl">
-        <p class="italic">"{{ projets_videoInfo.recommandation }}"</p>
+        <p class="italic mt-16">"{{ projets_videoInfo.recommandation }}"</p>
         <p class="text-right"> {{ projets_videoInfo.nom_personne_reco }}</p>
       </div>
     </div>

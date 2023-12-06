@@ -13,6 +13,7 @@
                 d'inclure des articles sur la production et la création des films.
                 Grâce à ce site, je pourrai découvrir l'évolution de cet art au fil
                 du temps dans les années à venir. </p>
+                <img class="scale-75" src="/img/3.png" alt="">
         </div>
         <h2 class="mt-40">Objectif</h2>
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
@@ -72,7 +73,7 @@
         </div>
 
         <h2 class="mt-40">Pages</h2>
-        <div class="mt-4 lg:mt-6 grid lg:grid-cols-4">
+        <div class="mt-4 lg:mt-6 grid lg:grid-cols-4 gap-8 mx-8">
             <div class="flex flex-col justify-center items-center">
                 <img class=" mx-auto" src="/img/mu2.png" alt="">
                 <p>Un article sur le film culte
@@ -99,7 +100,7 @@
         </div>
 
         <h2 class="mt-40">Fonctionnalités</h2>
-        <div class="mt-4 lg:mt-6 grid lg:grid-cols-4">
+        <div class="mt-4 lg:mt-6 grid lg:grid-cols-4 gap-8 mx-8">
             <div class="flex flex-col justify-center items-center">
                 <img class=" mx-auto" src="/img/mu6.png" alt="">
                 <p>Un carrousel permet de faire
@@ -136,3 +137,5 @@
 
     </main>
 </template>
+
+

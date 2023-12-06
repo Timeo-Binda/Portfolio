@@ -55,6 +55,20 @@ export type projets_videoRecord<Tproduits = unknown> = {
   nom_personne_reco?: string
 }
 
+export type projets_designRecord<Tproduits = unknown> = {
+  titre?: string
+  cover?: string
+  projet?: string
+  realisation?: string
+  photo_bonus?: string
+  role?: string
+  categorie?: categorieOptions
+  date?: string
+  note?: number
+  recommandation?: string
+  nom_personne_reco?: string
+}
+
 export type UsersRecord = {
   avatar?: string
   name?: string
@@ -64,19 +78,25 @@ export type UsersRecord = {
 export type projets_videoResponse<Texpand = unknown> = Required<projets_videoRecord> &
   AuthSystemFields<Texpand>
 
+  export type projets_designResponse<Texpand = unknown> = Required<projets_designRecord> &
+    BaseSystemFields<Texpand>
+
 export type UsersResponse<Texpand = unknown> = Required<UsersRecord> & AuthSystemFields<Texpand>
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
   projets_video: projets_videoRecord
+  projets_design: projets_designRecord // Ajout de la nouvelle collection
   users: UsersRecord
 }
 
 export type CollectionResponses = {
   projets_video: projets_videoResponse
+  projets_design: projets_designResponse // Ajout de la nouvelle collection
   users: UsersResponse
 }
+
 
 // Type for usage with type asserted PocketBase instance
 // https://github.com/pocketbase/js-sdk#specify-typescript-definitions
