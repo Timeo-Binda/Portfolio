@@ -38,7 +38,7 @@ onMounted(() => {
 
 <template>
   <main>
-    <div class="flex items-center justify-center flex-col pb-16">
+    <div class="flex items-center pt-8 justify-center flex-col pb-16">
       <h1 class="font-extrabold">Timéo BINDA</h1>
       <h1 class="font-thin text-right text-base font">Vidéaste</h1>
     </div>

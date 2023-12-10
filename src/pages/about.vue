@@ -40,7 +40,7 @@ onMounted(() => {
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
             <div>
                 <h2>Bonjour !</h2>
-                <p>je suis Timéo, créateur français passionné basé à Montréal. Ma vie est une symphonie de musique, de
+                <p>Je suis Timéo, créateur français passionné basé à Montréal. Ma vie est une symphonie de musique, de
                     captures photographiques et de créations vidéo. Chaque projet est une fusion artistique où je marie ma
                     passion pour l'esthétique visuelle et mon amour pour la narration immersive.</p>
             </div>
@@ -51,7 +51,7 @@ onMounted(() => {
         <h2 class="mt-24 lg:mt-48">Mon Parcours</h2>
 
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
-            <p>étudiant français passionné actuellement basé à Montréal au Cégep de Vanier. Au-delà de mes études en
+            <p>Etudiant français passionné actuellement basé à Montréal au Cégep de Vanier. Au-delà de mes études en
                 création numérique, ma vie est nourrie par le rythme de la musique, la capture de moments uniques à travers
                 la photographie, et l'art de réaliser des vidéos originales.</p>
             <div>

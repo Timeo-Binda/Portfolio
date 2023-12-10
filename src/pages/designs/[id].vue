@@ -8,7 +8,7 @@ const props = defineProps<{
 }>();
 
 const projets_designInfo = await projets_designId(props.id);
-const design = projets_designInfo.url;
+
 
 const imagebonus = projets_designInfo.photo_bonus;
 console.log(imagebonus);
@@ -23,6 +23,7 @@ console.log(urlImagesBonus);
 
 const img = projets_designInfo.cover;
 const urlImg = img && pb.getFileUrl(projets_designInfo, img, { thumb: '100x250' });
+
 
 const images = Array.isArray(projets_designInfo.photo_bonus) ? projets_designInfo.photo_bonus : [];
 
@@ -41,12 +42,9 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
 <template>
     <h2 class="mt-8">{{ projets_designInfo.titre }}</h2>
 
-    <!-- <div class="flex items-center justify-center w-full h-full pt-2 pb-4">
-        <img src="urlImg" alt="">
-    </div> -->
-
-
-
+     <div class="flex items-center justify-center w-full h-full pt-2 pb-4">
+        <img :src="urlImg" alt="">
+    </div> 
 
     <div class="lg:grid lg:grid-cols-2">
         <p>Rôle: {{ projets_designInfo.role }}</p>

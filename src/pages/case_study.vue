@@ -1,9 +1,8 @@
 <template>
-    <main class="bg-[#323232]">
+    <main class="bg-gray-900">
         <h2 class="my-8 flex justify-center">Etude de cas</h2>
-        <div class="flex items-center justify-center"><img class="scale-50"
-                src="/img/1.png" alt="">
-        </div>
+        
+        
         <h2 class="mt-40">Reverse footage</h2>
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
             <p>J'ai été chargé de créer un site web optimisé pour un iPhone X,
@@ -19,6 +18,8 @@
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
             <p>Ce projet à été réalisé dans le cadre d'un exercice
                 pédagogique au département mmi de Montbéliard.</p>
+                <img class="mx-auto"
+                    src="/img/4.png" alt="">
         </div>
         <h2 class="mt-40">Colors</h2>
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">

@@ -3,7 +3,7 @@ import OeuvreCard from '@/components/OeuvreCard.vue'
 import { RouterLink, RouterView } from 'vue-router'
 import { useHead } from '@unhead/vue'
 useHead({
-  title: 'Accuei LeafArtisans'
+  title: 'BINDA - Designs'
 })
 import { allprojets_video } from '@/backend'
 
