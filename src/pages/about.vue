@@ -40,9 +40,7 @@ onMounted(() => {
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
             <div>
                 <h2>Bonjour !</h2>
-                <p>Je suis Timéo, créateur français passionné basé à Montréal. Ma vie est une symphonie de musique, de
-                    captures photographiques et de créations vidéo. Chaque projet est une fusion artistique où je marie ma
-                    passion pour l'esthétique visuelle et mon amour pour la narration immersive.</p>
+                <p>Salut, je m'appelle Timéo, un créateur français. Ma vie, c'est une combinaison de musique, de photos et de vidéos. Chaque projet, c'est un mix artistique où je mêle le visuel à des histoires captivantes, simplement parce que j'adore ça.</p>
             </div>
             <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[5/3] object-cover" src="/img/about/pp1.png" alt="">
 
@@ -51,9 +49,8 @@ onMounted(() => {
         <h2 class="mt-24 lg:mt-48">Mon Parcours</h2>
 
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
-            <p>Etudiant français passionné actuellement basé à Montréal au Cégep de Vanier. Au-delà de mes études en
-                création numérique, ma vie est nourrie par le rythme de la musique, la capture de moments uniques à travers
-                la photographie, et l'art de réaliser des vidéos originales.</p>
+            <p>
+    Je suis actuellement étudiant en BUT Métiers du Multimédia et de l'Internet à Montbéliard, avec une spécialisation en création numérique. Mon parcours m'a également conduit à passer un semestre à Montréal, au Cégep Vanier, où j'ai exploré les domaines du micropublishing et de l'hypermédia. Ma passion réside dans la création numérique, et je m'investis pleinement dans différentes facettes de ce domaine, que ce soit à travers la musique, la photographie, le design ou la réalisation de vidéos.</p>
             <div>
                 <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[5/3] object-cover" src="/img/about/vanier.png" alt="">
             </div>
@@ -63,9 +60,9 @@ onMounted(() => {
 
         <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
             <p>Redéfinir la communication visuelle pour les entreprises. Ce qui me distingue n'est pas simplement ce que je
-                fais, mais comment je le fais. Chaque vidéo que je crée est bien plus qu'un projet ; c'est une expérience
-                méticuleusement façonnée. Au-delà de l'expertise technique, je m'engage à transformer des idées en histoires
-                visuelles laissant une empreinte.</p>
+                fais, mais comment je le fais. Chaque projets dans lequel je me lance est une expérience
+                méticuleusement façonnée pour atteindre l'objectif ciblé. Au-delà de l'expertise technique, je m'engage à transformer des idées en histoires
+                visuelles laissant un impact.</p>
             <div>
                 <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[5/3] object-cover" src="/img/about/image5.png" alt="">
             </div>
