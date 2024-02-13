@@ -12,6 +12,8 @@ const video = projets_videoInfo.url;
 
 const imagebonus = projets_videoInfo.photo_bonus;
 console.log(imagebonus);
+
+
 const urlImagesBonus = Array.isArray(imagebonus) 
   ? imagebonus.map(nomImage => pb.getFileUrl(projets_videoInfo, nomImage, { thumb: '100x250' }))
   : [];
