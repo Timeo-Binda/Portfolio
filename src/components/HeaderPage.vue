@@ -33,7 +33,7 @@ function closeMenu() {
                     <li class="menu-item"><RouterLink class="menu-link" to="/Videos" @click="closeMenu">Vidéos</RouterLink></li>
                     <li class="menu-item"><RouterLink class="menu-link" to="/photos" @click="closeMenu">Photos</RouterLink></li>
                     <li class="menu-item"><RouterLink class="menu-link" to="/designs" @click="closeMenu">Design</RouterLink></li>
-                    <li class="menu-item"><RouterLink class="menu-link" to="about" @click="closeMenu">A propos</RouterLink></li>
+                    <li class="menu-item"><RouterLink class="menu-link" to="about" @click="closeMenu">À propos</RouterLink></li>
                     <!-- <li class="menu-item"><RouterLink class="menu-link" to="case_study" @click="closeMenu">case study</RouterLink></li> -->
                 </ul>
             </nav>
