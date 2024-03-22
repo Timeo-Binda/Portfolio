@@ -113,11 +113,6 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
       <img :src="url" :alt="'Image bonus ' + (index + 1)" class="w-full h-full aspect-[5/3] object-cover ">
     </div>
   </div>
-
-
-
-
-
 </template>
 
 
