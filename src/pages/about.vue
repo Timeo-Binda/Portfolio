@@ -13,7 +13,7 @@ useHead({
 
 onMounted(() => {
     gsap.utils.toArray('.section').forEach(section => {
-        gsap.from(section, {
+        gsap.from<HTMLElement>(section as HTMLElement, {
             opacity: 0,
             y: 100,
             duration: 1,
