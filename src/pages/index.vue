@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import OeuvreCard from '@/components/OeuvreCard.vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import { allprojets_video } from '@/backend'
 import { ref, onMounted } from 'vue'
+import mute from '../components/icons/mute.vue';
+import unmute from '../components/icons/unmute.vue';
+
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
@@ -12,8 +15,8 @@ useHead({
 })
 
 const projets_videoList = await allprojets_video();
-
 const cardContainer = ref<HTMLElement | null>(null)
+const isMuted = ref(true)
 
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger)
@@ -33,23 +36,56 @@ onMounted(() => {
     })
   }
 })
-</script>
 
+
+</script>
 
 <template>
   <main>
-    <div class="flex items-center pt-8 justify-center flex-col pb-16">
-      <h1 class="font-extrabold">Timéo BINDA</h1>
-      <h1 class="font-thin text-right text-base font">Vidéaste</h1>
+    <div class="relative">
+      <video id="videoPlayer" autoplay :muted="isMuted" loop class="object-cover w-full h-full -px-40">
+        <!-- Utilise un lecteur vidéo en fonction de l'orientation -->
+        <source
+          src="https://res.cloudinary.com/db9tou4ck/video/upload/v1711290746/vid%C3%A9os_portfolio/x1ugiuh9dh4teajsolno.mp4"
+          type="video/mp4" media="(orientation: landscape)">
+        <source
+          src="https://res.cloudinary.com/db9tou4ck/video/upload/v1711291537/vid%C3%A9os_portfolio/a395muuen0th5e6vlhrb.mp4"
+          type="video/mp4" media="(orientation: portrait)">
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute bottom-4 right-4 flex items-center space-x-2 ">
+        <p class="text-white text-xs lg:text-sm">showreel 2023</p>
+        <div>
+          <unmute class="w-6 h-6 cursor-pointer" @click="isMuted = true" v-if="!isMuted" />
+          <mute class="w-6 h-6 cursor-pointer" @click="isMuted = false" v-else />
+        </div>
+      </div>
+      <div class="absolute top-0 left-0 p-4">
+        <h2 class="text-white text-6xl lg:text-9xl">Timéo BINDA</h2>
+        <h3 class="text-white lg:text-xl lg:ml-4 lg:-mt-4">Vidéaste / Designer</h3>
+      </div>
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center justify-center ">
+        <svg class="w-8 h-8 text-white animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
     </div>
 
-    <h2>Mes projets</h2>
-  <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4" ref="cardContainer">
-        <li v-for="projets_video in projets_videoList" :key="projets_video.id">
-          <RouterLink :to="{ name: 'Videos-id', params: { id: projets_video.id } }" class="text-red-700 hover:text-red-400">
-            <OeuvreCard :key="projets_video.id" v-bind="{ ...projets_video }" />
-          </RouterLink>
-        </li>
-      </ul>
+
+
+    <h2 class="pt-32">Mes projets</h2>
+    <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4" ref="cardContainer">
+      <li v-for="projets_video in projets_videoList" :key="projets_video.id">
+        <RouterLink :to="{ name: 'Videos-id', params: { id: projets_video.id } }"
+          class="text-red-700 hover:text-red-400">
+          <OeuvreCard :key="projets_video.id" v-bind="{ ...projets_video }" />
+        </RouterLink>
+      </li>
+    </ul>
+
+
+
+
   </main>
 </template>
