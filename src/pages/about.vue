@@ -13,12 +13,12 @@ useHead({
 
 onMounted(() => {
     gsap.utils.toArray('.section').forEach(section => {
-        gsap.from<HTMLElement>(section as HTMLElement, {
+        gsap.from(section as HTMLElement, {
             opacity: 0,
             y: 100,
             duration: 1,
             scrollTrigger: {
-                trigger: section,
+                trigger: section as HTMLElement,
                 start: 'top 80%', // Commence l'animation lorsque le haut de la section est à 80% de la vue
                 end: 'bottom top', // Fin de l'animation lorsque le bas de la section atteint le haut de la vue
                 scrub: true, // "Scrub" active le défilement de type "pin"
