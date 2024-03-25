@@ -42,9 +42,9 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
 <template>
     <h2 class="mt-8">{{ projets_designInfo.titre }}</h2>
 
-     <div class="flex items-center justify-center w-full h-full pt-2 pb-4">
+    <div class="flex items-center justify-center w-full h-full pt-2 pb-4">
         <img :src="urlImg" alt="">
-    </div> 
+    </div>
 
     <div class="lg:grid lg:grid-cols-2">
         <p>Rôle: {{ projets_designInfo.role }}</p>
@@ -58,18 +58,18 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
     <h2 class="mt-24 lg:mt-48">Le projet</h2>
 
     <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
-        <p>{{ projets_designInfo.projet }} </p>
+        <p class="mr-4">{{ projets_designInfo.projet }} </p>
         <div>
-            <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[5/3] object-cover" :src="urlImagesBonus[0]">
+            <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[16/9] object-cover" :src="urlImagesBonus[0]">
         </div>
     </div>
 
     <h2 class="mt-24 lg:mt-48">Sa Réalisation</h2>
 
     <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
-        <p>{{ projets_designInfo.realisation }} </p>
+        <p class="mr-4">{{ projets_designInfo.realisation }} </p>
         <div>
-            <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[5/3] object-cover" :src="urlImagesBonus[1]">
+            <img class="mt-6 lg:mt-0 lg:pl-20 aspect-[16/9] object-cover" :src="urlImagesBonus[1]">
         </div>
     </div>
 
