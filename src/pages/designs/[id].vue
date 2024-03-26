@@ -43,6 +43,34 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
 
 
 
+// Récupération de l'ID de la collection de projets_design à partir de la liste fournie
+const collectionInfo = [
+    {
+        "id": "zan1lz7gol8c2pi",
+        "name": "projets_video",
+        // autres champs...
+    },
+    {
+        "id": "k28nkvipbxk3hwm",
+        "name": "projets_design",
+        // autres champs...
+    }
+];
+
+// Recherche de l'entrée correspondant à projets_design
+const projets_designCollection = collectionInfo.find(collection => collection.name === 'projets_design');
+
+if (!projets_designCollection) {
+    console.error("La collection projets_design n'a pas été trouvée.");
+}
+
+// Construction de l'URL pour télécharger le fichier PDF depuis votre API
+const collectionId = projets_designCollection ? projets_designCollection.id : '';
+const filename = projets_designCollection ? projets_designInfo.doc : ''; // Utilisation d'un nom de fichier par défaut
+const token = ''; // Remplacez par votre jeton d'authentification si nécessaire
+const url = `https://portfolio.timeobinda.fr/api/files/${collectionId}/${props.id}/${filename}?token=${token}`;
+
+
 </script>
 
 <template>
@@ -92,6 +120,13 @@ const secondImage = imageDetails[1] || { url: '/image-not-found.png', descriptio
             <img :src="url" :alt="'Image bonus ' + (index + 1)" class="w-full h-full aspect-[5/3] object-cover ">
         </div>
     </div>
+    <div v-if="projets_designInfo.doc" class="flex justify-center items-center mt-16">
+        <a :href="url" download
+            class="bg-transparent border border-white hover:bg-white hover:text-black px-4 py-2 text-white transition-colors duration-300 ease-in-out">
+            Télécharger le projet
+        </a>
+    </div>
+
 </template>
 
 

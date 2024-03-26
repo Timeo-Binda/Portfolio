@@ -44,12 +44,12 @@ onMounted(() => {
   <main>
     <div class="relative">
       <video id="videoPlayer" autoplay :muted="isMuted" loop class="object-cover w-full h-full -px-40">
+        
+
         <!-- Utilise un lecteur vidéo en fonction de l'orientation -->
-        <source
-          src="https://res.cloudinary.com/db9tou4ck/video/upload/v1711290746/vid%C3%A9os_portfolio/x1ugiuh9dh4teajsolno.mp4"
+        <source src="https://res.cloudinary.com/db9tou4ck/video/upload/v1711477674/p7gllkpn5lddeiekuhyq.mp4"
           type="video/mp4" media="(orientation: landscape)">
-        <source
-          src="https://res.cloudinary.com/db9tou4ck/video/upload/v1711291537/vid%C3%A9os_portfolio/a395muuen0th5e6vlhrb.mp4"
+        <source src="https://res.cloudinary.com/db9tou4ck/video/upload/v1711477764/gcepzrifijba7hcfupt2.mp4"
           type="video/mp4" media="(orientation: portrait)">
         Your browser does not support the video tag.
       </video>
@@ -86,7 +86,7 @@ onMounted(() => {
 
     <div class="grid grid-cols-2 gap-4">
       <div class="flex justify-center mt-8">
-        <RouterLink class="menu-link" to="/videos" >
+        <RouterLink class="menu-link" to="/videos">
           <div
             class="w-80% border border-white py-2 px-4 text-white text-center transition-all duration-300 hover:bg-white hover:text-black">
             Plus de Vidéos
@@ -94,7 +94,7 @@ onMounted(() => {
         </RouterLink>
       </div>
       <div class="flex justify-center mt-8">
-        <RouterLink class="menu-link" to="/designs" >
+        <RouterLink class="menu-link" to="/designs">
           <div
             class="w-80% border border-white py-2 px-4 text-white text-center transition-all duration-300 hover:bg-white hover:text-black">
             Plus de Designs

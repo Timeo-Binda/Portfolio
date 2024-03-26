@@ -55,9 +55,9 @@ onUnmounted(() => {
 
 
         <section id="section2">
-            <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 ">
+            <div class="mt-4 lg:mt-6 grid lg:grid-cols-2 gap-8">
                 <div class="mx-4">
-                    <h2 class="mt-24 lg:mt-48">Mon Parcours</h2>
+                    <h2 class="mt-24 lg:mt-48 lg:mr-4">Mon Parcours</h2>
                     <p>
                         Je suis actuellement étudiant en BUT Métiers du Multimédia et de l'Internet à Montbéliard, avec une
                         spécialisation en création numérique. Mon parcours m'a également conduit à passer un semestre à
