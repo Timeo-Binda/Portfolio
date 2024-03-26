@@ -84,19 +84,22 @@ onMounted(() => {
       </li>
     </ul>
 
-
-    <div class="grid grid-cols-2 gap-4 lg:pt-16 lg:pb-8">
+    <div class="grid grid-cols-2 gap-4">
       <div class="flex justify-center mt-8">
-        <button
-          class="w-80% border border-white text-white py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">
-          Plus de vidéos
-        </button>
+        <RouterLink class="menu-link" to="/videos" >
+          <div
+            class="w-80% border border-white py-2 px-4 text-white text-center transition-all duration-300 hover:bg-white hover:text-black">
+            Plus de Vidéos
+          </div>
+        </RouterLink>
       </div>
       <div class="flex justify-center mt-8">
-        <button
-          class="w-80% border border-white text-white py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">
-          Plus de design
-        </button>
+        <RouterLink class="menu-link" to="/designs" >
+          <div
+            class="w-80% border border-white py-2 px-4 text-white text-center transition-all duration-300 hover:bg-white hover:text-black">
+            Plus de Designs
+          </div>
+        </RouterLink>
       </div>
     </div>
 
