@@ -2,6 +2,10 @@
 import { pb } from '@/backend';
 import { projets_designId } from '@/backend';
 import { formatDate } from '@/helper';
+import { useHead } from '@unhead/vue'
+useHead({
+    title: 'Portfolio BINDA'
+})
 
 const props = defineProps<{
     id: string;
@@ -36,6 +40,8 @@ const imageDetails = images.map(img => ({
 // Accédez directement à des indices spécifiques du tableau
 const firstImage = imageDetails[0] || { url: '/image-not-found.png', description: 'Description par défaut', alt: 'image' };
 const secondImage = imageDetails[1] || { url: '/image-not-found.png', description: 'Description par défaut' };
+
+
 
 </script>
 

@@ -11,7 +11,7 @@ const projets_videoList = await allprojets_video();
 </script>
 
 <template>
-      <h2 class="lg:mt-8">Mes Vidéos</h2>
+      <h2 class="lg:mt-8">Mes vidéos</h2>
     <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4" ref="cardContainer">
           <li v-for="projets_video in projets_videoList" :key="projets_video.id">
             <RouterLink :to="{ name: 'Videos-id', params: { id: projets_video.id } }" class="text-red-700 hover:text-red-400">

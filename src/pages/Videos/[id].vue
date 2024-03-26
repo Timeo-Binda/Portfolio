@@ -2,6 +2,10 @@
 import { pb } from '@/backend';
 import { projets_videoId } from '@/backend';
 import { formatDate } from '@/helper';
+import { useHead } from '@unhead/vue'
+useHead({
+  title: 'Portfolio BINDA'
+})
 
 const props = defineProps<{
   id: string;

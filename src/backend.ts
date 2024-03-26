@@ -39,3 +39,17 @@ export async function projets_designId(id: string) {
   const record = await pb.collection('projets_design').getOne<projets_designResponse>(id)
   return record
 }
+
+
+export async function getAllProjects() {
+  const videoProjects = await allprojets_video()
+  const designProjects = await allprojets_design()
+
+  // Fusionnez les projets vidéo et design
+  const allProjects = [...videoProjects, ...designProjects]
+
+  // Triez les projets par date dans l'ordre décroissant
+  allProjects.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
+  return allProjects
+}

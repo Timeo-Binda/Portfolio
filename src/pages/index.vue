@@ -62,7 +62,7 @@ onMounted(() => {
       </div>
       <div class="absolute top-0 left-0 p-4">
         <h2 class="text-white text-6xl lg:text-9xl">Timéo BINDA</h2>
-        <h3 class="text-white lg:text-xl lg:ml-4 lg:-mt-4">Vidéaste / Designer</h3>
+        <h3 class="text-white lg:text-xl lg:ml-4 lg:-mt-4">Filmmaker / Designer</h3>
       </div>
       <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex items-center justify-center ">
         <svg class="w-8 h-8 text-white animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -74,15 +74,31 @@ onMounted(() => {
 
 
 
-    <h2 class="pt-32">Mes projets</h2>
+    <h2 class="pt-32">Quelques projets</h2>
     <ul class="grid grid-cols-1 lg:grid-cols-2 gap-4" ref="cardContainer">
-      <li v-for="projets_video in projets_videoList" :key="projets_video.id">
+      <li v-for="(projets_video, index) in projets_videoList.slice(0, 6)" :key="projets_video.id">
         <RouterLink :to="{ name: 'Videos-id', params: { id: projets_video.id } }"
           class="text-red-700 hover:text-red-400">
           <OeuvreCard :key="projets_video.id" v-bind="{ ...projets_video }" />
         </RouterLink>
       </li>
     </ul>
+
+
+    <div class="grid grid-cols-2 gap-4 lg:pt-16 lg:pb-8">
+      <div class="flex justify-center mt-8">
+        <button
+          class="w-80% border border-white text-white py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">
+          Plus de vidéos
+        </button>
+      </div>
+      <div class="flex justify-center mt-8">
+        <button
+          class="w-80% border border-white text-white py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">
+          Plus de design
+        </button>
+      </div>
+    </div>
 
 
 
